@@ -1,68 +1,174 @@
 body {
+    color: #1c1e21;
     margin: 0;
     padding: 0;
     background-color: #FAFAFA;
+    font-family: Helvetica, Arial, sans-serif;
 }
 
-.container{
-    width: 1300px;
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 781px;
     display: grid;
     /*Para pegar um pedaco, como são duas colunas, e depois o tamanho*/
     grid-template-columns: 1fr 348px;
     /*Para espaçar as colunas*/
     column-gap: 20px;
-    margin: 0 auto;
+    margin: 120px auto 0;
+    margin-bottom: 82px;
 
-    
+
 }
 
 .image {
-    height: 581.14px;
+    height: 634px;
+    position: relative;
     background: url('./imgs/smartphone.png') no-repeat center;
     margin-left: 10px;
 }
 
+.image img {
+    position: relative;
+    top: 25px;
+    left: 125px;
+}
+
+.form {
+    margin-top: 18px;
+    text-align: center;
+}
+
 .form form {
+    margin-bottom: 10px;
     /*Para alinhar no centro*/
     text-align: center;
     /*colocar as bordas*/
-    border: 1px solid rgb(219, 219, 219);
+    border: 1px solid #dbdbdb;
     background-color: #FFFFFF;
-    padding: 50px 20px;
-    
+    padding: 20px 20px;
+
 
 }
 
 .form form .logo {
-    margin-bottom: 20px;
+    width: 57%;
+    margin-top: 24px;
+    margin-bottom: 36px;
 }
 
 form input {
-    height: 36px;
+    height: 38px;
     font-size: 12px;
     border-radius: 3px;
     color: #262626;
-    width: 100%;
+    width: 87%;
     box-sizing: border-box;
     border: 1px solid #dbdbdb;
     background-color: #fafafa;
-    margin-bottom: 4px;
-    padding: 0 8px;
+    margin-bottom: 7px;
+    padding: 0 7px;
 }
 
 form button {
-    width: 100%;
+    width: 87%;
     color: #fff;
     font-weight: bold;
     appearance: none;
     background-color: #0195F6;
     margin-top: 11px;
-    height: 30px;
+    height: 33px;
     border: 0;
     border-radius: 8px;
 }
+
 form button :disabled {
     background-color: #b2bffc;
-    
-    
+
+
+}
+
+.form form .separador {
+    font-size: 13px;
+    color: #8e8e8e;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 16px 0 26px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.form form .separador::after,
+.form form .separador::before {
+    content: '';
+    width: 124px;
+    height: 1px;
+    background-color: #dbdbdb;
+    display: block;
+
+}
+
+.form form .entra-face {
+    font-size: 14px;
+    color: #385185;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 18px;
+
+}
+
+.form form .esquece-senha {
+    color: #00376b;
+    font-size: 13px;
+}
+
+.cadastre {
+    font-size: 14px;
+    border: 1px solid #dbdbdb;
+    background-color: #FFFFFF;
+    padding: 10px;
+}
+
+.cadastre a {
+    font-weight: bold;
+    color: #0095f6;
+}
+
+.obtenha-o-app p {
+    font-size: 14px;
+}
+
+
+
+.image-maior {
+    width: 130px;
+}
+
+.image-menor {
+    width: 110px;
+}
+
+.footer {
+    color: #8e8e8e;
+    font-size: 12px;
+    text-align: center;
+    width: 900px;
+    margin: 0 auto;
+}
+
+.footer a {
+    color: #8e8e8e;
+
+    margin: 0 4px;
+    display: inline-block;
+}
+
+.footer .links {
+    margin-bottom: 20px;
 }
